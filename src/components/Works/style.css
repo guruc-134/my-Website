@@ -1,0 +1,35 @@
+.works {
+  flex-grow: 1;
+  padding-bottom: 40px;
+}
+
+.works h1 {
+  margin-bottom: 20px;
+}
+.works a
+{
+  text-decoration: underline;
+  font-weight: bold;
+  color:rgb(50, 51, 51);
+}
+@media (min-width: 800px) {
+  .content {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+
+.content {
+  display: grid;
+  font-size: 24px;
+  grid-template-columns: 1fr 1fr;
+}
+.works-header
+{
+  text-decoration: underline;
+  border-radius: 15px;
+  padding:5px;
+}
+.work-link
+{
+  color:white !important;
+}

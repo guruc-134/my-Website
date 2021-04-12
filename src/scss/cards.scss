@@ -1,0 +1,151 @@
+// //CARD 
+$card_1_front:linear-gradient(to left,rgba(12, 194, 185, 0.767),rgba(47, 115, 241, 0.719));
+$card_1_back:linear-gradient(to right,rgba(12, 194, 185, 0.767),rgba(47, 115, 241, 0.719));
+$card_2_front:linear-gradient(to left,rgba(12, 194, 185, 0.767),rgba(47, 115, 241, 0.719));
+$card_2_back:linear-gradient(to right,rgba(12, 194, 185, 0.767),rgba(47, 115, 241, 0.719));
+$card_3_front:linear-gradient(to left,rgba(12, 194, 185, 0.767),rgba(47, 115, 241, 0.719));
+$card_3_back:linear-gradient(to right,rgba(12, 194, 185, 0.767),rgba(47, 115, 241, 0.719));
+// $card_2_back:linear-gradient(to left,rgba(rgba(133, 19, 123, 0.767),.8),rgba(rgba(211, 78, 223, 0.719),.7));
+// $card_2_front:linear-gradient(rgba(rgba(222, 156, 228, 0.897),.8),rgba(rgba(223, 137, 215, 0.877),.7));
+// $card_3_back:linear-gradient(to left,rgba(rgba(34, 235, 184, 0.829),.8),rgba(rgba(107, 240, 233, 0.767),.7));
+// $card_3_front:linear-gradient(rgba(rgba(183, 231, 221, 0.925),.8),rgba(rgba(157, 240, 226, 0.918),.7));
+// // colors
+$Light_green: rgba(126, 213, 111, 0.68);
+$Medium_green: hsl(140, 49%, 55%);
+$Dark_green: rgba(40, 180, 133, 0.7);
+$Body_Background: rgb(255, 255, 255);
+
+
+// GRID
+$grid-width: 114rem;
+$gutter-vertical: 8rem;
+$gutter-horizontal: 6rem;
+@mixin clearfix {
+    &::after {
+        content: "";
+        display: table;
+        clear: both;
+    }
+}
+@mixin card($back,$background)
+{
+    width:100%;
+    min-width:300px;
+    height:350px;
+    position:absolute;
+    top:0px;  
+    transition: all .8s ease;
+    backface-visibility: hidden;
+    // box-shadow:0rem 1.5rem 4rem rgba(56, 55, 55, 0.507);
+    background-image: $background;
+    border-radius: 3rem;
+    @if $back
+    {
+        background-color: $background;
+        transform: rotateY(180deg);
+    }
+}
+
+
+
+.card
+{
+    perspective:180rem;
+    cursor:pointer;
+    height: 350px;
+    padding-top:3rem;
+    position:relative;
+    border-radius: 3rem;
+    justify-content:center;
+    text-align:center;
+    background-blend-mode:screen;
+    &-1
+    {
+        align-content:center;
+        &-front
+        {
+            overflow: hidden;
+        @include card(false,$card_1_front);
+        }
+        &-back
+        {
+            @include card(true,$card_1_back);
+        }
+    }
+    &-2
+    {
+        align-content:center;
+        
+        &-front
+        {
+            overflow: hidden;
+        @include card(false,$card_2_front);
+        }
+        &-back
+        {
+            @include card(true,$card_2_back);
+        }
+    }
+    &-3
+    {
+        background-image:line;
+        align-content:center;
+        
+        &-front
+        {
+            overflow: hidden;
+        @include card(false,$card_3_front);
+        }
+        &-back
+        {
+            @include card(true,$card_3_back);
+        }
+    }
+    &:hover [class$='-front']{
+        transform: rotateY(-180deg);
+    }
+    &:hover  [class$='-back']
+    {
+        transform: rotateY(0deg);
+    }
+    &-text-list
+    {
+        list-style: none;
+    }
+}
+.card-text
+{
+    margin-left:3rem;
+    // font-size: 1.8rem;
+    font-weight: 400;
+    // text-indent: 4rem;
+    text-align: center;
+}
+
+.hover-msg
+{
+    font-size: 13px;
+}
+.heading-card
+{
+    font-size: 1.8rem;
+    // margin-top: -5rem;
+    // position:absolute;
+    // margin-left: 11rem;;
+    z-index:5;
+    color: white;
+    font-weight: 400;
+    border-radius: 10px;;
+    &-1
+    {
+        background-color:rgba(1, 8, 17, 0.788);
+    }
+    &-2
+    {
+        background-color:rgba(1, 8, 17, 0.788);
+    }
+    &-3
+    {
+        background-color:rgba(1, 8, 17, 0.788);
+    }
+}

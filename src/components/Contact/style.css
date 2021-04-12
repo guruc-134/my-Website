@@ -1,0 +1,24 @@
+.contact {
+  flex-grow: 1;
+}
+
+.contact h1 {
+  margin-bottom: 20px;
+}
+
+.contact-items
+{
+  padding:10px;
+}
+.contact-items-large-top
+{
+  padding:40px 20px;
+}
+
+.contact-header
+{
+  text-decoration:underline;
+  width: 500px;
+  border-radius: 15px;
+  padding:5px;
+}

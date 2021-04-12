@@ -1,0 +1,29 @@
+// colors
+$Light_green: rgba(126, 213, 111, 0.68);
+$Medium_green: hsl(140, 49%, 55%);
+$Dark_green: rgba(40, 180, 133, 0.7);
+$Body_Background: rgb(255, 255, 255);
+
+
+$Box_shadow_light:rgba(17, 16, 16, 0.733);
+$Box_shadow_dark:rgba(25, 25, 25, 0.712);
+
+$main_background: #e0fadd7a;
+
+// FONT
+$default-font-size: 1.6rem;
+
+
+// GRID
+$grid-width: 114rem;
+$gutter-vertical: 8rem;
+$gutter-horizontal: 6rem;
+
+
+//CARD 
+$card_1_back:linear-gradient(to left,rgba(rgba(233, 133, 18, 0.795),.8),rgba(rgba(219, 151, 73, 0.801),.7));
+$card_1_front:linear-gradient(rgba(rgb(238, 208, 143),.8),rgba(rgb(231, 194, 138),.7));
+$card_2_back:linear-gradient(to left,rgba(rgba(133, 19, 123, 0.767),.8),rgba(rgba(211, 78, 223, 0.719),.7));
+$card_2_front:linear-gradient(rgba(rgba(222, 156, 228, 0.897),.8),rgba(rgba(223, 137, 215, 0.877),.7));
+$card_3_back:linear-gradient(to left,rgba(rgba(34, 235, 184, 0.829),.8),rgba(rgba(107, 240, 233, 0.767),.7));
+$card_3_front:linear-gradient(rgba(rgba(183, 231, 221, 0.925),.8),rgba(rgba(157, 240, 226, 0.918),.7));

@@ -1,0 +1,103 @@
+$Light_green: rgba(126, 213, 111, 0.68);
+$Medium_green: hsl(140, 49%, 55%);
+$Dark_green: rgba(40, 180, 133, 0.7);
+$Body_Background: rgb(255, 255, 255);
+$Box_shadow_light:rgba(17, 16, 16, 0.733);
+$Box_shadow_dark:rgba(25, 25, 25, 0.712);
+$main_background: #e0fadd7a;
+$default-font-size: 1.6rem;
+
+.btn
+{
+    &:visited, &:link
+    {
+        color:black;
+        background-color:white;
+        display: inline-block;
+        text-decoration: none;
+        text-transform: uppercase;
+        padding:1rem;
+        border-radius: 40rem;
+        box-shadow: 0px 4px 7px rgba(17, 16, 16, 0.733);
+        animation: appear  2s  ease-in 0.5s;
+        animation-fill-mode: backwards;
+        position: relative;
+        margin-top:3rem;
+        padding: 1.8rem;
+    }
+    &:hover
+    {
+        transform: translateY(-4px);
+        box-shadow: 0px 4px 7px rgba(17, 16, 16, 0.733);
+        &::after{
+            transform:scale(1.6);
+            opacity: 0;
+        }
+    }
+    &:active
+    {
+        transform:translateY(-2px);
+        box-shadow: 0px 3px 3px ;
+    }
+    &::after
+    {
+        content:"";
+        width:100%;
+        display:inline-block;
+        height:100%;
+        position:absolute;
+        border-radius: 10rem;
+        background-color:white;
+        top:0;
+        left:0;
+        z-index:-1;
+        transition: all 0.2s;
+    }
+}
+.btn-text
+{
+    &:link,
+    &:visited
+    {
+        font-size: $default-font-size;
+        color:$Medium_green;
+        display:inline-block;
+        font-weight: bold;
+        text-decoration: none;
+        border-bottom: 1px solid $Medium_green;
+        padding: 3px;
+        transition: all 0.2s;
+    }
+    &:hover
+    {
+        background-color: $Medium_green;
+        color:white;
+        transform: translateY(-0.5rem);
+        box-shadow: 0px 4px 5px $Box_shadow_dark;
+    }   
+    &:active
+    {
+        box-shadow: 0px 3px 2px $Box_shadow_light;
+
+    } 
+}
+.button_card
+{
+    width:12rem;
+    &:visited, &:link
+    {
+        font-size: 1.6rem;
+        animation:none;
+        padding:2rem;
+        margin-top:22rem;
+    }
+    
+}
+.section_button:visited ,.section_button:link
+{
+    background-color: $Medium_green;
+    color:white;
+    animation:none;
+    margin-top: 1rem;
+    margin: auto;
+}

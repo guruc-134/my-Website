@@ -1,0 +1,33 @@
+.about {
+  flex-grow: 1;
+  font-size: 20px;  
+}
+
+.about h1 {
+  margin-bottom: 18px;
+}
+.larger-text
+{
+  font-size:20px;
+  padding:30px;
+}
+.header-secondary
+{
+  margin: 40px;
+}
+.last-row
+{
+  margin-bottom:50px;
+}
+
+@media (max-width: 1000px) {
+  .row{
+      flex-direction: column;
+      flex-grow: 1;
+      justify-content: center;
+  }
+  .col-1-of-3 
+  {
+      margin-right: 30px;
+  }
+  }
