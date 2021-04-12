@@ -58,10 +58,10 @@ const NavBar = () => {
           <ul style={{ left: open ? "0" : "-100vw" }}>
             <li>
               <Link
-                to="/"
+                to="/my-Website/"
                 onClick={handleClose}
-                style={{ color: location.pathname === "/" && "#ffffff" ,
-                fontSize : location.pathname === "/" && "40px"}}
+                style={{ color: location.pathname === "/my-Website/" && "#ffffff" ,
+                fontSize : location.pathname === "/my-Website/" && "40px"}}
 
               >
                 Home
@@ -69,40 +69,40 @@ const NavBar = () => {
             </li>
             <li>
               <Link
-                to="/about"
+                to="/my-Website/about"
                 onClick={handleClose}
-                style={{ color: location.pathname === "/about" && "#ffffff" ,
-                fontSize : location.pathname === "/about" && "40px"}}
+                style={{ color: location.pathname === "/my-Website/about" && "#ffffff" ,
+                fontSize : location.pathname === "/my-Website/about" && "40px"}}
               >
                 About
               </Link>
             </li>
             <li>
               <Link
-                to="/skills"
+                to="/my-Website/skills"
                 onClick={handleClose}
-                style={{ color: location.pathname === "/skills" && "#ffffff",
-                fontSize : location.pathname === "/skills" && "40px" }}
+                style={{ color: location.pathname === "/my-Website/skills" && "#ffffff",
+                fontSize : location.pathname === "/my-Website/skills" && "40px" }}
               >
                 Skills
               </Link>
             </li>
             <li>
               <Link
-                to="/works"
+                to="/my-Website/works"
                 onClick={handleClose}
-                style={{ color: location.pathname === "/works" && "#ffffff",
-                fontSize : location.pathname === "/works" && "40px" }}
+                style={{ color: location.pathname === "/my-Website/works" && "#ffffff",
+                fontSize : location.pathname === "/my-Website/works" && "40px" }}
               >
                 Works
               </Link>
             </li>
             <li>
               <Link
-                to="/contact"
+                to="/my-Website/contact"
                 onClick={handleClose}
-                style={{ color: location.pathname === "/contact" && "#ffffff" ,
-                fontSize : location.pathname === "/contact" && "40px"}}
+                style={{ color: location.pathname === "/my-Website/contact" && "#ffffff" ,
+                fontSize : location.pathname === "/my-Website/contact" && "40px"}}
               >
                 Contact
               </Link>
