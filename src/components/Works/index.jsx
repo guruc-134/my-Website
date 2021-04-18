@@ -16,35 +16,44 @@ const About = () => {
                       An application which allows you to set goals and plan out study sessions.It displays the session goals at the end of 
                       the session for reviewing
                     </p>
+                    <a className='featurelink' href='https://guruc-134.github.io/Study-Timer/'>Plan Now</a>
+
                 </div>
                 <div className="col-1-of-2 feature-box ">
                     <h3 className="heading-tertiary u-margin-bottom-small">
                         Chat Application
                     </h3>
                     <p className="feature-box-text">
-                      A chat application using React and Firebase  
+                      A chat application which allows you to create rooms and chat with all the people who are logged into the web application. Login is made easy using google auth
                     </p>
+                    <a className='featurelink' href='https://lets-chat134.web.app/'> Lets Chat</a>
                 </div>
             </div>
             <div className="row">
-                <div className="col-1-of-2 feature-box ">
+                <div className="col-1-of-3 feature-box ">
                     <h3 className="heading-tertiary u-margin-bottom-small">
                         Bookmark keeper
                     </h3>
                     <p className="feature-box-text">An application which stores the links of various websites that are frequently visited.It has the feature of
-                    adding and removing the bookmarks</p>
+                    adding and removing the bokmarks</p>
                     
                 </div>
-                <div className="col-1-of-2 feature-box ">
+                <div className="col-1-of-3 feature-box ">
+                    <h3 className="heading-tertiary u-margin-bottom-small">
+                        Landing Page
+                    </h3>
+
+                    <p className="feature-box-text">A landing page build using concepts of advance CSS and SASS</p>
+                    <p className="feature-box-text">Learnt / implemented concepts like animations, card flips,and other cool visual effects</p>
+                    <a className='featurelink' href='https://guruc-134.github.io/CssProject_1/'> check it out</a>
+                </div>
+                <div className="col-1-of-3 feature-box ">
                     <h3 className="heading-tertiary u-margin-bottom-small">
                         Todo list
                     </h3>
 
-                    <p className="feature-box-text">A Web App which uses the localStorage , build using React.
-                    It helps you set a target of certain tasks and mark them completed once done</p>
+                    <p className="feature-box-text">A Web App which helps you set a target of certain tasks and mark them completed once done</p>
                     <p className="feature-box-text">Filtering of tasks can also be done based on the status of completion.</p>
-
-
                 </div>
             </div>
         </section>

@@ -33,3 +33,12 @@
 {
   color:white !important;
 }
+.featurelink
+{
+  font-size:16px;
+  padding:5px;
+  text-decoration: none !important;
+  background-color: #e0faddcc;
+  border-radius:20px;
+  color:teal !important;
+}
