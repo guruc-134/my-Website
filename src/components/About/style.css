@@ -1,6 +1,7 @@
 .about {
   flex-grow: 1;
   font-size: 20px;  
+  color:white;
 }
 
 .about h1 {
@@ -8,7 +9,7 @@
 }
 .larger-text
 {
-  font-size:20px;
+  font-size:2rem;
   padding:30px;
 }
 .header-secondary
@@ -19,15 +20,87 @@
 {
   margin-bottom:50px;
 }
+.card{
+  width:30vw;
+  text-align:center;
+}
+.card p
+{
+  padding:0 1rem;
+}
+.card-front-header
+{
+  background-color: rgb(1, 14, 13);
+  color:#48c4b9;
+  padding:1.2rem;
+  font-size:1.7rem;
+}
+.card-back-header
+{
+  font-size:1.7rem;
+  padding:1.2rem;
+  background:linear-gradient(to right,rgba(12, 194, 185, 0.767),rgba(47, 115, 241, 0.719));
+}
+.card-1-front , .card-2-front, .card-3-front
+{
+  -webkit-animation: blink 2s linear infinite;
+  -moz-animation: blink 2s linear infinite;
+  -ms-animation: blink 2s linear infinite;
+  -o-animation: blink 2s linear infinite;
+  animation: blink 2s linear infinite;
+  transition:all 1s ease-in-out infinite;
+  
+}
+.card-1-back , .card-2-back, .card-3-back
+{
+  -webkit-animation: blink 2s linear infinite;
+  -moz-animation: blink 2s linear infinite;
+  -ms-animation: blink 2s linear infinite;
+  -o-animation: blink 2s linear infinite;
+  animation: blink 2s linear infinite;
 
+  background: rgb(1, 14, 13) !important;
+}
+.card-front-header-small
+{
+  padding:0.8rem;
+  text-decoration: underline;
+  font-size:1.3rem;
+}
+.about-row
+{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content:space-around;
+}
+.about-text
+{
+line-height:2;
+font-size: 1.4rem;
+}
 @media (max-width: 1000px) {
-  .row{
+  .about-row{
       flex-direction: column;
-      flex-grow: 1;
       justify-content: center;
   }
-  .col-1-of-3 
-  {
-      margin-right: 30px;
+  .card{
+    width:80%;
+    margin: auto; 
   }
   }
+
+  @keyframes blink {
+    0% {box-shadow: 0 3px 16px -1px #48c4b9; }
+    50% { text-shadow: none; }
+    100% { box-shadow: 0 3px 16px -6px #48c4b9 }
+}
+
+@-webkit-keyframes blink {
+    0% { box-shadow: 0 3px 16px -1px rgb(255, 252, 252); }
+    50% { text-shadow: 0 0 0; }
+    100% { box-shadow: 0 3px 16px -6px rgb(255, 252, 252); }
+}
+
+p {
+
+}

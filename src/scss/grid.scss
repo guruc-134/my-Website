@@ -81,14 +81,14 @@ $gutter-horizontal: 40px;
     }
 }
 
-@media (max-width: 1000px) {
-.row{
-    flex-direction: column;
-    flex-grow: 1;
-    justify-content: center;
-}
-.col-1-of-3 
-{
-    margin-right: 30px;
-}
-}
+// @media (max-width: 1000px) {
+// .row{
+//     flex-direction: column;
+//     flex-grow: 1;
+//     justify-content: center;
+// }
+// .col-1-of-3 
+// {
+//     margin-right: 30px;
+// }
+// }

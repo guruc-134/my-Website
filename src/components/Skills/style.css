@@ -1,37 +1,21 @@
-.skills {
-  flex-grow: 1;
-}
-
-.skills h1 {
-  margin-bottom: 20px;
-}
-.skills-header
+.other-skills
 {
-  padding-top:30px;
-  padding-bottom:10px;
-  text-decoration: underline;
-  border-radius: 15px;
-  padding:5px;
+font-size: 1.8rem;
+display:flex;
+flex-direction:column;
+flex-wrap: wrap;
 }
-
-.content {
-  display: grid;
-  font-size: 24px;
-  grid-template-columns: 1fr 1fr;
+.other-skills p{
+  line-height: 1.8;
 }
-
-.content div {
-  margin-bottom: 25px;
+.skills-row
+{
+  display:flex;
+  flex-wrap: wrap;
+  justify-content:flex-start;
 }
-
-
-.content span{
-  margin: 0;
-  margin-bottom: 10px;
-}
-
-@media (min-width: 800px) {
-  .content {
-    grid-template-columns: 1fr 1fr 1fr;
-  }
+.row-item
+{
+  padding:1.7rem;
+  font-size: 1.2rem;
 }

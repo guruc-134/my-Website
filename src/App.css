@@ -2,12 +2,12 @@
 .app {
   display: flex;
   margin: 20px auto;
-  max-width: 1200px;
+  width:80vw;
   padding: 20px 15px;
-  min-height: 100vh;
-  border-radius: 20px;
+  min-height: 90vh;
+  border-radius:30px;
   flex-direction: column;
-/* background:linear-gradient(to right,#baf0a5,#b8eb40); */
+box-shadow: 9px 9px 16px 3px rgb(24, 22, 22);
 background:#19201ff5;
 
 

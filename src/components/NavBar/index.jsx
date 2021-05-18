@@ -40,20 +40,20 @@ const NavBar = () => {
           </Link>
         </div>
         <div className="list-wrapper">
-        <span
+        <span className= 'menu-bars'
             alt="Menu bars"
             style={{ opacity: !open ? 1 : 0 }}
             onClick={() => {
               setOpen(!open);
             }}
-          >Menu</span>
+          >  &equiv;</span>
           <span
             alt="Menu cross"
             style={{ opacity: open ? 1 : 0 }}
             onClick={() => {
               setOpen(!open);
             }}
-          ></span>
+          > x</span>
 
           <ul style={{ left: open ? "0" : "-100vw" }}>
             <li>

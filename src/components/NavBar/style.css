@@ -69,11 +69,13 @@
   z-index: 4;
   width: 40px;
   right: 15px;
-  padding: 8px;
+  font-size: 2.4rem;
+  font-weight: 700;
+  border-radius: 5px;
   position: absolute;
-  border-radius: 999px;
-  background-color: #fffefe;
+  color:white;
   transition: all 0.5s ease-in-out;
+  cursor: pointer;
 }
 
 @media (min-width: 1000px) {

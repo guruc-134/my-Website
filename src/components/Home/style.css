@@ -6,13 +6,12 @@
   align-items: center;
 }
 
-.home .title {
+.home .title >h1 {
   width: 100%;
-  font-size: 18px;
+  font-size: 3.3vw;
   text-align: center;
   font-family: "Righteous", cursive;
 }
-
 .home .title p {
   line-height: 50px;
 }
@@ -21,11 +20,11 @@
   border: none;
   outline: none;
   cursor: pointer;
-  font-size: 24px;
-  margin-top: 30px;
+  font-size: 1.8vw;;
+  margin:30px auto;
   color: #ffffff;
   padding: 10px 15px;
-  border-radius: 999px;
+  border-radius: 15px;
   background-color: #3bb8ad;
   font-family: "Righteous", cursive;
 }
@@ -33,13 +32,18 @@
 .home .person {
   width: 100%;
   margin-top: 20px;
+  text-align: center;
 }
 
 .home .person img {
-  width: 80%;
+  width: 50vw;
+  margin: auto;
 }
 
 @media (min-width: 800px) {
+  .home .title button {
+  font-size:1.7vw;
+  }
   .home {
     flex-direction: row;
     justify-content: space-between;
@@ -52,6 +56,6 @@
     font-size: 25px;
   }
   .home .person img {
-    width: 100%;
+    width: 30vw;
   }
 }
