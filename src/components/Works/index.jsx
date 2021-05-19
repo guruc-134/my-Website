@@ -65,7 +65,7 @@ const About = () => {
                     Get your Avatar is a simple application, which can be used as a funny way to find out what is the avatar corresponding to your name,
                         It can also be used by web developers directly inside their website through the "embedded HTML" feature.
                     </p>
-                    <a className='project-link' href='https://guruc-134.github.io/React-Pokedex/'>Try now ! </a>
+                    <a className='project-link' href='https://guruc-134.github.io/Get-Your-Avatar/'>Try now ! </a>
                 </div>
                 <div className="project-item">
                     <h3 className="project-title">
@@ -85,7 +85,7 @@ const About = () => {
                     <p className='project-description'>
                     Finding it hard to think of Quotes to post in social media ? Check out this application which provides random quotes along with author name, it also has the feature that directs you to twitter in cases you want to tweet it
                     </p>
-                    <a className='project-link' href='https://guruc-134.github.io/React-Pokedex/'>Get Inspired </a>
+                    <a className='project-link' href='https://guruc-134.github.io/RandomQuoteGenerator/'>Get Inspired </a>
                 </div>
                 <div className="project-item">
                     <h3 className="project-title">
@@ -95,7 +95,7 @@ const About = () => {
                     <p className='project-description'>
                     A project made using Advance CSS and Sass, It has a theme of a tours site along with some skeletal text.This project has cool animations and smooth visual effects using pure css.
                     </p>
-                    <a className='project-link' href='https://guruc-134.github.io/React-Pokedex/'>Visit now</a>
+                    <a className='project-link' href='https://guruc-134.github.io/CssProject_1/'>Visit now</a>
                 </div>
         </section>
         <h2 className='works-header'>Competitive Programming / DSA 👨‍💻</h2>
